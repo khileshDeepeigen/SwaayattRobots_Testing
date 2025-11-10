@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin } from 'lucide-react';
-import '../../stylesheets/JobOpening.css'; 
+import '../../stylesheets/JobOpening.css';
 
 function Map() {
   const [showAddress, setShowAddress] = useState(false);
@@ -13,48 +13,73 @@ function Map() {
   };
 
   return (
+    // <div className="map_back-container">
+    //   <div className="map_back-map-background">
+    //     <div className="map_back-map-gradient"></div>
+    //     <div 
+    //       className="map_back-map-image"
+    //       style={{
+    //         backgroundImage: 'url("https://d3126e9c9smo8b.cloudfront.net/swaayatt_react_website_videos/map.png")'
+    //       }}
+    //     />
+    //   </div>
+
+    //   <div className="map_back-content">
+    //     <div 
+    //       className={`map_back-location-marker ${showAddress ? 'map_back-show-address' : ''}`}
+    //       onMouseEnter={() => setShowAddress(true)}
+    //       onMouseLeave={() => setShowAddress(false)}
+    //       onClick={handleLocationClick}
+    //     >
+
+    //       <div className="map_back-company-icon">
+    //         <div className="map_back-icon-background"></div>
+    //         {/* Replace the Building2 icon with your logo */}
+    //         <img src="https://d3126e9c9smo8b.cloudfront.net/swaayatt_react_website_videos/logo.png" alt="Company Logo" className="map_back-logo" />
+    //       </div>
+
+    //       <div className="map_back-pin-container">
+    //         <MapPin 
+    //           size={80} 
+    //           className="map_back-location-pin"
+    //           strokeWidth={1.5}
+    //         />
+    //       </div>
+
+    //       <div className="map_back-address-card">
+    //         <div className="map_back-card-content">
+    //           <h3 className="map_back-company-title">Our Location</h3>
+    //           <p className="map_back-address-text">{companyAddress}</p>
+    //           <span className="map_back-click-hint">Click to open in Google Maps</span>
+    //         </div>
+    //         <div className="map_back-card-decoration"></div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
     <div className="map_back-container">
-      <div className="map_back-map-background">
-        <div className="map_back-map-gradient"></div>
-        <div 
-          className="map_back-map-image"
-          style={{
-            backgroundImage: 'url("https://d3126e9c9smo8b.cloudfront.net/swaayatt_react_website_videos/map.png")'
-          }}
-        />
-      </div>
+      <iframe
+        src={googleMapsUrl}
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
 
-      <div className="map_back-content">
-        <div 
-          className={`map_back-location-marker ${showAddress ? 'map_back-show-address' : ''}`}
-          onMouseEnter={() => setShowAddress(true)}
-          onMouseLeave={() => setShowAddress(false)}
-          onClick={handleLocationClick}
+      <div className="map_back-address-card">
+        <h3 className="map_back-company-title">Our Location</h3>
+        <p className="map_back-address-text">{companyAddress}</p>
+        <a
+          href={googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="map_back-click-hint"
         >
-
-          <div className="map_back-company-icon">
-            <div className="map_back-icon-background"></div>
-            {/* Replace the Building2 icon with your logo */}
-            <img src="https://d3126e9c9smo8b.cloudfront.net/swaayatt_react_website_videos/logo.png" alt="Company Logo" className="map_back-logo" />
-          </div>
-
-          <div className="map_back-pin-container">
-            <MapPin 
-              size={80} 
-              className="map_back-location-pin"
-              strokeWidth={1.5}
-            />
-          </div>
-
-          <div className="map_back-address-card">
-            <div className="map_back-card-content">
-              <h3 className="map_back-company-title">Our Location</h3>
-              <p className="map_back-address-text">{companyAddress}</p>
-              <span className="map_back-click-hint">Click to open in Google Maps</span>
-            </div>
-            <div className="map_back-card-decoration"></div>
-          </div>
-        </div>
+          Click to open in Google Maps
+        </a>
       </div>
     </div>
   );
