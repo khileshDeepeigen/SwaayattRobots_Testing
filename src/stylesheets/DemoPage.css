@@ -1,0 +1,139 @@
+*{
+  font-family: Poppins, SourceHanSansK, Arial, sans-serif;
+}
+body, h3, h2, span, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -80px;
+  }
+  
+  .heading {
+    font-family: "Dennis Sans', sans-serif";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-stretch: 100%;
+    font-size: 70px;
+    line-height: 1;
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  
+  .work-item {
+    width: 100%;
+    border-bottom: 1px solid #d1d5db;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .work-title {
+    font-family: "GT-Walsheim", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: #102c61;
+    font-size: 50px;
+    line-height: 1;
+    text-wrap: nowrap;
+  }
+  
+  .work-description {
+    color: #1C1D20;
+    font-family: 'Dennis Sans', sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.66;
+    margin-bottom: 1em;
+  }
+  
+  .work-item:hover .work-title {
+    color: #AAAAAA;
+  }
+  
+  .work-item:hover .work-description {
+    color: #AAAAAA;
+  }
+  
+  .card {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: #F1F1F1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    padding: 20px;
+  }
+  
+  .card video {
+    margin-top: 25px;
+    width: 90%;
+    height: 80%;
+    margin-left: 25px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .view-button {
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: rgba(0, 0, 200, 0.9);
+    transform: scale(1.1);
+  }
+  
+
+ 
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; 
+    position: relative;
+    left: 30%;
+  }
+  
+  .arrow-icon {
+    width: 90px; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  

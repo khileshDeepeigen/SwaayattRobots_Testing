@@ -1,0 +1,250 @@
+*{
+    font-family: Poppins, SourceHanSansK, Arial, sans-serif;
+}
+.technology_container ::selection {
+    background-color: #3498db; 
+    color: #fff;  
+}
+
+.technology_container ::-moz-selection {
+    background-color: #3498db;  
+    color: #fff;  
+}
+.unique-demo-video-section {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 55px; */
+}
+
+.unique-right-side {
+    flex: 2;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.unique-right-side.fade-in {
+    opacity: 1;
+}
+
+#uniqueMainVideo {
+    width: 100%;
+    max-width: 950px;
+    height: 80%!important;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.unique-tabs {
+    display: flex
+;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 60px;
+    /* z-index: 1; */
+    cursor: pointer;
+    position: relative;
+    /* left: 55px; */
+    margin-top: -75px;
+}
+
+
+.unique-tab {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.unique-active-tab {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+
+
+.mp_section {
+    margin-top: -570px;
+}
+
+.mp_heading {
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 26px;
+}
+
+.unique-mp-video-section {
+    margin-top: -120px;
+    margin-bottom: 60px;
+}
+
+.flex-arrow-unique {
+    position: absolute;
+    left: 88%;
+    transform: translateX(-50%) rotate(-90deg);
+    font-size: 40px;
+    line-height: 1.1;
+    white-space: nowrap;
+    margin-top: -382px;
+}
+
+
+/* .mp_heading{
+    font-family: "Dennis Sans', sans-serif";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-stretch: 100%;
+    font-size: 60px;
+    line-height: 1;
+    position: relative;
+    color: black;
+} */
+
+.motion-planning-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px;
+    margin-top: -80px;
+}
+
+.motion-left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.motion-left-content h2 {
+    margin-bottom: 10px;
+}
+
+.motion-left-content p {
+    margin-bottom: 20px;
+}
+
+.motion-right-content {
+    flex: 2;
+    position: relative;
+}
+
+#motionMainVideo {
+    width: 100%;
+    max-width: 950px;
+    height: 80% !important;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+
+/* perception */
+
+.preception {
+    margin-top: -50px;
+}
+
+.perception-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px;
+    margin-top: -80px;
+}
+
+.perception-left-side {
+    flex: 2;
+    position: relative;
+}
+
+#perceptionMainVideo {
+    width: 100%;
+    max-width: 950px;
+    height: 80%!important;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.perception-right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.perception-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -40px;
+}
+
+.perception-pagination-dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #102c61;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.perception-pagination-dot.active {
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.perception-pagination span {
+    font-size: 9px;
+    color: #333;
+    margin-top: 23px;
+    margin-left: 2px;
+}
+
+.perception-see-all-videos-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #102c61;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #102c61;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+    text-align: center;
+    text-decoration: none;
+    width: 165px;
+    margin: 0px auto;
+}
+
+.perception-see-all-videos-btn .arrow {
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 14px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.perception-see-all-videos-btn:hover {
+    color: #102c61;
+    transform: translateX(10px);
+}
+
+.perception-see-all-videos-btn:hover .arrow {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.perception-right-side h2 {
+    margin-bottom: 26px;
+}
