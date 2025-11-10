@@ -27,6 +27,7 @@
     "react-router-dom": "^6.28.0",
     "react-swipeable": "^7.0.1",
     "scrollmagic": "^2.0.8",
+    "serve": "^14.2.5",
     "styled-components": "^6.1.12",
     "swaayatt_robots_website": "file:",
     "swiper": "^11.2.10"
