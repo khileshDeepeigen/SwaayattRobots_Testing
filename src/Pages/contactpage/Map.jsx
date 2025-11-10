@@ -62,10 +62,10 @@ function Map() {
       <iframe
         src={googleMapsUrl}
         width="100%"
-        height="450"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
+        className='map_iframe'
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
